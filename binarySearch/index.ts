@@ -10,7 +10,7 @@ function binarySearch(list: number[], item: number) {
 
   while (low <= high) {
     //while not searched the entire list
-    let mid = low + high; //get the mid of the list
+    let mid = Math.floor((low + high) / 2); //get the mid of the list
     let guess = list[mid]; //set our guess
     if (guess === item) {
       //compares if our guess is what we want
